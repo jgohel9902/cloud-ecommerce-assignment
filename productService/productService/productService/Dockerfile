@@ -1,8 +1,7 @@
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jre
 
 WORKDIR /app
 
-# Copy jar from target folder
 COPY target/*.jar app.jar
 
 EXPOSE 8082
